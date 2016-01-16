@@ -33,7 +33,7 @@ Fenice-1.11项目地址：
 
 #使用方法
 
-1. 配置文件：/etc/fenice.conf
+- 配置文件：/etc/fenice.conf
 ```
 	root=/srv/fenice/avroot
 	log_file=/var/log/fenice.log
@@ -42,10 +42,10 @@ Fenice-1.11项目地址：
 	max_session=100
 ```
 	默认端口554，root就是avroot目录，可以自行修改。
+	
+- 日志文件：/var/log/fenice.log
 
-2. 日志文件：/var/log/fenice.log
-
-3. 编译：
+- 编译：
 ```
 	./auto
 	./configure
@@ -53,14 +53,14 @@ Fenice-1.11项目地址：
 	sudo make install
 ```
 
-4. 运行：
+- 运行：
 
 	默认生成在/usr/local/bin
 ```
 	./fenice -c /etc/fenice.conf
 ```
 
-5. 使用VLC访问：
+- 使用VLC访问：
 ```
-rtsp://localhost:554/myh264.sd
+	rtsp://localhost:554/myh264.sd
 ```
