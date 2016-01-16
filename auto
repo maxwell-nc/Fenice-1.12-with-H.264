@@ -1,0 +1,14 @@
+#!/bin/bash
+
+rm -f configure Makefile
+find ./ -name Makefile -exec rm {} \;
+aclocal
+autoheader
+autoconf
+libtoolize --force --copy
+
+#not need symbol link file
+#automake -a
+automake -ac
+
+#cd $HOME/sample && ./configure --prefix=$HOME
